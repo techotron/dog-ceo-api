@@ -1,0 +1,18 @@
+{
+    "configurations": [{
+            "name": "go run main.go",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceRoot}/main.go",
+            "env": {
+                "DB_HOST": "localhost",
+                "DB_PORT": "5432",
+                "DB_USER": "app",
+                "DB_PASSWORD": "password",
+                "DB_NAME": "dog_ceo_api",
+                "DB_MIGRATIONS_PATH": "database/migrations"
+            }
+        }
+    ]
+}

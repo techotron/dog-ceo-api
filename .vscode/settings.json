@@ -1,0 +1,10 @@
+{
+  "go.testEnvVars": {
+    "DB_USER": "app",
+    "DB_PASSWORD": "password",
+    "DB_NAME": "dog_ceo_api",
+    "DB_PORT": "5432",    
+    "DB_HOST": "localhost",
+    "DB_MIGRATIONS_PATH": "${workspaceFolder}/database/migrations"
+  }
+}

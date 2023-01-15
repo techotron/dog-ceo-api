@@ -1,0 +1,6 @@
+FROM golang:1.19-alpine AS build-env
+RUN apk --no-cache add build-base git gcc
+WORKDIR /app
+COPY ./ /app
+RUN go install -mod=mod github.com/githubnemo/CompileDaemon
+ENTRYPOINT CompileDaemon --build="go build -o backend" --command=./backend
