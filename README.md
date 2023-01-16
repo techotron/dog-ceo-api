@@ -9,3 +9,6 @@ Pretty much [this API](https://github.com/ElliottLandsborough/dog-ceo-api) but w
 - Duplicate routes but behind a single parent *//* which mimics error responses (eg randomly return a 500, 404 etc)
 - Put images in S3 (run locally with localstack)
 
+```sql
+select * from images where breed_name = 'hound' and sub_breed_name = 'basset';
+```
